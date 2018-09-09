@@ -1,4 +1,13 @@
 <div>
+    <form>
+        <label for='title'>
+            <input type="text" id='title'>
+        </label>
+        <label for='description'>
+            <input type="text" id='description'>
+        </label>
+
+    </form>
     <input [(ngModel)]="task.title">
     <h3>{{task.title}}</h3>
     <p>{{task.description}}</p>
@@ -13,11 +22,11 @@
                 <div *ngIf="editMode">
                     <input [(ngModel)]="task.title">
                     <input [(ngModel)]="task.description">
-                    <button class='list__btn'>Ok</button>
+                    <button (click)="onSubmitEdit(task)" class='list__btn'>Ok</button>
                 </div>
 
-                <button class='list__btn list__btn--delete' (click)="onDelete(task)">apagar</button>
-                <button class='list__btn list__btn--edit' (click)="onEdit(task)">editar</button>
+                <button class='list__btn list__btn--delete' (click)="onDelete(task)">Apagar</button>
+                <button class='list__btn list__btn--edit' (click)="onEdit(task)">Editar</button>
                 <button class='list__btn ' (click)="onDelete(task)">apagar</button>
             </div>
         </li>

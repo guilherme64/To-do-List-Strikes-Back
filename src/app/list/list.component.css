@@ -23,6 +23,7 @@
 }
 
 .list__btn {
+    background: black;
     font-size: 0.8em;
     padding: 5px;
     color: white;
@@ -30,6 +31,7 @@
     border: 0px;
     border-radius: 2px;
     margin: 5px;
+    min-width: 50px;
 }
 
 .list__btn--delete {
@@ -49,15 +51,15 @@
 }
 
 .list__btn--edit {
-    background: rgb(46, 152, 210);
+    background: rgb(220, 220, 106);
 }
 
 .list__btn--edit:hover {
-    background-color: rgb(82, 187, 244);
+    background-color: rgb(199, 187, 51);
 }
 
 .list__btn--edit:active {
-    background-color: rgb(12, 124, 184);
+    background-color: rgb(181, 167, 57);
 }
 
 .list__btn--edit:focus {

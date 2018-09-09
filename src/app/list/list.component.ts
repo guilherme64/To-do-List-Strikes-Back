@@ -25,5 +25,9 @@ export class ListComponent implements OnInit {
     console.log('Essa atividade sera editada');
     this.editMode === true? this.editMode = false : this.editMode = true;
   }
+  onSubmitEdit(task: Task){
+    console.log(task.id +' Sera editada');
+    this.editMode = false;
+  }
 
 }
