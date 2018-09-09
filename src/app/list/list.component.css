@@ -41,7 +41,7 @@
 }
 
 .list__btn--delete:active {
-    background-color: rgb(172, 36, 36);
+    background-color: rgb(191, 57, 57);
 }
 
 .list__btn--delete:focus {
