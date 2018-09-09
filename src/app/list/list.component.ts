@@ -13,5 +13,11 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
   }
+  onSelect(task: Task){
+    console.log(task.id);
+  }
+  onDelete(task: Task){
+    console.log(task.id+ ' Essa tarefa sera apagada');
+  }
 
 }
