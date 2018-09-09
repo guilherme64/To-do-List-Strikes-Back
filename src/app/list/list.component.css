@@ -47,3 +47,19 @@
 .list__btn--delete:focus {
     outline: none;
 }
+
+.list__btn--edit {
+    background: rgb(46, 152, 210);
+}
+
+.list__btn--edit:hover {
+    background-color: rgb(82, 187, 244);
+}
+
+.list__btn--edit:active {
+    background-color: rgb(12, 124, 184);
+}
+
+.list__btn--edit:focus {
+    outline: none;
+}

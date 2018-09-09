@@ -10,8 +10,14 @@
             <div>
                 <h3>{{task.title}}</h3>
                 <p>{{task.description}}</p>
+                <div *ngIf="editMode">
+                    <input [(ngModel)]="task.title">
+                    <input [(ngModel)]="task.description">
+                    <button class='list__btn'>Ok</button>
+                </div>
+
                 <button class='list__btn list__btn--delete' (click)="onDelete(task)">apagar</button>
-                <button class='list__btn ' (click)="onDelete(task)">apagar</button>
+                <button class='list__btn list__btn--edit' (click)="onEdit(task)">editar</button>
                 <button class='list__btn ' (click)="onDelete(task)">apagar</button>
             </div>
         </li>

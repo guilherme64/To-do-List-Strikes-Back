@@ -9,6 +9,7 @@ import { TASKS } from '../mock-list';
 export class ListComponent implements OnInit {
   task: Task = {id: 1,title:'Titulo da atividade', description: 'Detalhes desta atividade descrita', completed: false};
   tasks = TASKS;
+  editMode = false;
   constructor() { }
 
   ngOnInit() {
@@ -18,6 +19,11 @@ export class ListComponent implements OnInit {
   }
   onDelete(task: Task){
     console.log(task.id+ ' Essa tarefa sera apagada');
+  }
+
+  onEdit(task: Task){
+    console.log('Essa atividade sera editada');
+    this.editMode === true? this.editMode = false : this.editMode = true;
   }
 
 }
