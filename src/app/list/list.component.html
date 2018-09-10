@@ -1,10 +1,10 @@
 <div>
-    <form>
+    <form (ngSubmit)="onAddTask()">
         <label for='title'>
-            <input type="text" id='title'>
+            <input [(ngModel)]="task.title" type="text" id='title' name="title">
         </label>
         <label for='description'>
-            <input type="text" id='description'>
+            <input [(ngModel)]="task.description" type="text" id='description' name="description">
         </label>
         <button type="submit">Adicionar</button>
 
