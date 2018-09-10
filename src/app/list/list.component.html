@@ -9,14 +9,13 @@
         <button type="submit">Adicionar</button>
 
     </form>
-    <input [(ngModel)]="task.title">
     <h3>{{task.title}}</h3>
     <p>{{task.description}}</p>
 </div>
 <h2>This is what you have to do:</h2>
 <div class='container'>
     <ul class='list'>
-        <li class='list__item' *ngFor="let task of tasks" (click)="onSelect(task)">
+        <li class='list__item' *ngFor="let task of tasks | async" (click)="onSelect(task)">
             <div>
                 <h3>{{task.title}}</h3>
                 <p>{{task.description}}</p>
